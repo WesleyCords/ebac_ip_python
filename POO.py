@@ -27,7 +27,6 @@ sys.path.insert(0, '/data')
 from arquivo_texto import ArquivoTexto
 
 class ArquivoCSV(ArquivoTexto):
-
 	def __init__(self, arquivo: str):
 		super().__init__(arquivo=arquivo)
 		self.colunas = self.extrair_nome_colunas()
